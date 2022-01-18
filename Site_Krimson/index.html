@@ -1,0 +1,224 @@
+<!Doctype>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>KRIM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+         <link href="css\bootstrap.min.css" rel="stylesheet" type="text/css">
+         <link rel="stylesheet" href="css/font-awesome.min.css">
+         <link rel="stylesheet" href="css\animate.css">
+         <link rel="stylesheet" href="css\login.css">
+        <!-- Файл стиля-->
+         <link href="css\main.css" rel="stylesheet" type="text/css">
+
+       
+
+    </head>
+
+    <body>
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="img\logo.png" class="logo animated fadeInUp">
+                    </div>
+                    <div class="col-lg-5  ml-auto">
+                        <nav>
+                            <ul class="menu d-flex justify-content-center animated fadeInDown">
+                                <li class="menu__item" onclick="document.getElementById('id01').style.display='block'"><a href="#">Войти</a></li>
+                                <li class="menu__item"><a href="registration.html">Регистрация</a></li>
+                                <li class="menu__item"><a href="#">Поддержка</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!--вход панель -->
+                <div id="id01" class="modal">
+  
+                    <form class="modal-content animate" action="/action_page.php">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img\log\1_jqDLAVyggs4ZCbNktKdNhg.jpeg" alt="Avatar" class="avatar">
+                      </div>
+                  
+                      <div class="containerlogin">
+                        <label for="uname"><b>Имя(Ник)</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                  
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                          
+                        <button class="buttonlog" type="submit">Войти</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                        </label>
+                      </div>
+                  
+                      <div class="containerlogin" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                        <span class="psw">Забыли <a href="#">пароль?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                  <!--конец панели входа-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="offer animated fadeInLeft">
+                            <h1 class="offer__title">
+                                    Inspire your inspiration
+                            </h1>
+                            <div class="offer__intro">Simple to use for your app, products<br> showcase and your inspirat</div>
+                            <p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
+                            <ul class="icons d-flex" >
+                                <li class="icons__item"><a href="#">
+                                    <i class="fa fa-apple"></i>
+                                </a></li>
+                                <li class="icons__item"><a href="#">
+                                    <i class="fa fa-android"></i>
+                                </a></li>
+                                <li class="icons__item"><a href="#">
+                                    <i class="fa fa-windows"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ml-auto">
+                        <img src="img\ipad-new.png" class="ipad animated fadeInRight">
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+
+        <section id="features" class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title">
+                               <h2 class="title__main">Tinyone features</h2>
+                               <p class="title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <div class="feature d-flex">
+                                <i class="fa fa-tablet feature__icon"></i>
+                                <div class="feature__block">
+                                    <h3 class="feature_title">
+                                            Fully Responsive
+                                    </h3>
+                                    <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature d-flex">
+                                <i class="fa fa-tablet feature__icon"></i>
+                                <div class="feature__block">
+                                    <h3 class="feature_title">
+                                            Fully Responsive
+                                    </h3>
+                                    <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="feature d-flex">
+                                    <i class="fa fa-tablet feature__icon"></i>
+                                    <div class="feature__block">
+                                        <h3 class="feature_title">
+                                                Fully Responsive
+                                        </h3>
+                                        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                    <div class="feature d-flex">
+                                        <i class="fa fa-tablet feature__icon"></i>
+                                        <div class="feature__block">
+                                            <h3 class="feature_title">
+                                                    Fully Responsive
+                                            </h3>
+                                            <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                        <div class="feature d-flex">
+                                            <i class="fa fa-tablet feature__icon"></i>
+                                            <div class="feature__block">
+                                                <h3 class="feature_title">
+                                                        Fully Responsive
+                                                </h3>
+                                                <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                            <div class="feature d-flex">
+                                                <i class="fa fa-tablet feature__icon"></i>
+                                                <div class="feature__block">
+                                                    <h3 class="feature_title">
+                                                            Fully Responsive
+                                                    </h3>
+                                                    <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <section id="touch" class="touch">
+                <div class="container">
+                     <div class="row">
+                            <div class="col-lg-12">
+                                    <div class="title">
+                                       <h2 class="title__main yellow">Keep in touch with us</h2>
+                                       <p class="title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+                                    </div>
+                            </div> 
+                     </div>
+                    <div class="row">
+                            <div class="col-lg-10 m-auto">
+                               <form action="#" class="form">
+                                  <input type="email" placeholder="Enter your email to update" class="form__input" required>
+                                  <button type="SUBMIT" class="form__btn">SUBMIT</button>
+                                </form>
+                           </div>
+                    </div>
+                </div>
+        </section>
+
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="credits">
+                            CREATED BY KRIM.
+                             SUBSCRABE!
+                            2018
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,465 @@
+/*Navbar xl*/
+
+.container_1 {
+    margin: 0 auto;
+    border-bottom: 2px solid currentColor;
+    ;
+}
+
+.navbar_1 {}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.nav-menu__item {
+    display: flex;
+    margin: 0px 15px;
+}
+
+.nav-menu__item a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.nav-menu__item .active {
+    text-decoration: none;
+    color: #5363db;
+}
+
+.nav-menu__item_center {
+    display: block;
+}
+
+.logo {
+    padding-left: 550px;
+    padding-right: 470px;
+    margin: 0;
+    text-align: center;
+}
+
+.logo__link {
+    display: inline-block;
+}
+
+.logo__image {
+    display: block;
+}
+
+@media screen and (max-width: 1500px) {
+    .logo {
+        padding-left: 350px;
+        padding-right: 270px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        padding-left: 150px;
+        padding-right: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        padding-left: 100px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        padding-left: 70px;
+        padding-right: 10px;
+    }
+}
+
+
+/* OVERLAY */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999999999999999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* Slider */
+
+.slider_s {
+    height: 850px;
+}
+
+
+/* Info */
+
+.cont_info {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.padd_info {
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+
+/* Slider company */
+
+@import url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+.slidecontainer {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-height: 1360px) {
+    .slidecontainer {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .slidecontainer {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slidecontainer {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slidecontainer {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.icons {
+    width: 100%;
+}
+
+.slide_s {
+    margin: 0 20px;
+}
+
+.slide_s img {
+    width: auto;
+    height: 200px;
+    /* Set logo height */
+}
+
+.slick-prev {
+    left: -40px;
+    right: auto;
+}
+
+.slick-next {
+    right: -40px;
+    left: auto;
+}
+
+.slick-prev,
+.slick-next {
+    background-color: transparent;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+}
+
+.slick-prev {
+    border-top: 2px solid #585858;
+    border-left: 2px solid #585858;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+}
+
+ :focus {
+    outline: 0;
+}
+
+.slick-next {
+    border-bottom: 2px solid #585858;
+    border-right: 2px solid #585858;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg) translate(5px, calc(-50% + 5px));
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+}
+
+@media (max-width: 767px) {
+    .slidecontainer {
+        max-width: 80%;
+    }
+    .slidecontainer .icons>button {
+        display: none !important;
+    }
+    .slide_s {
+        margin: 0 5px;
+        width: calc(20vw - 20px);
+    }
+    .slide_s img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 997px) {
+    .slidecontainer {
+        max-width: 800px;
+    }
+    .slidecontainer .icons>button {
+        display: none !important;
+    }
+    .slide_s {
+        margin: 0 5px;
+        width: calc(20vw - 20px);
+    }
+    .slide_s img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide_s {
+        margin: 0 10px;
+        width: calc(40vw - 40px);
+    }
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ :focus {
+    outline: none;
+}
+
+.slick-list.draggable {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slider_previe {
+    padding-top: 55px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Breakfast */
+
+
+/* TAB */
+
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    border-top: none;
+    padding-left: 0px;
+    padding-bottom: px;
+}
